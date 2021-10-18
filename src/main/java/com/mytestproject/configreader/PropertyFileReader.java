@@ -13,7 +13,7 @@ public class PropertyFileReader implements IconfigReader {
         prop = new Properties();
         try {
             prop.load(ResourceHelper
-                    .getResourcePathInputStream("./configfile/"
+                    .getResourcePathInputStream("/configfile/"
                             + "config.properties"));
 
         } catch (Exception e) {

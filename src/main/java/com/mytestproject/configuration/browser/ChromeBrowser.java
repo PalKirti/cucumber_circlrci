@@ -40,9 +40,9 @@ public class ChromeBrowser {
 		option.addArguments("--enable-javascript");
 
 		System.setProperty("webdriver.chrome.driver",
-				ResourceHelper.getResourcePath("./driver/chromedriver.exe"));
+				ResourceHelper.getResourcePath("/driver/chromedriver.exe"));
 		System.setProperty("webdriver.chrome.logfile",
-				ResourceHelper.getResourcePath("./logs/chromelogs/")
+				ResourceHelper.getResourcePath("/logs/chromelogs/")
 						+ "chromelog" + DateTimeHelper.getCurrentDateTime()
 						+ ".log");
 		WebDriver driver = new ChromeDriver(option);
